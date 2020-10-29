@@ -8,9 +8,25 @@ const Layout = ({ location, title, children }) => {
 
   
     header = (
-      <Link className="header-link-home" to="/">
+      <>
+      <Link to="/">
         {title}
       </Link>
+      <Link to="/">
+        {title}
+      </Link>
+      <Link to="/">
+        {title}
+      </Link>
+      <Link to="/">
+        {title}
+      </Link>
+      <Link to="/">
+        {title}
+      </Link>
+      <Link to="/">
+        {title}
+      </Link></>
     )
   
 

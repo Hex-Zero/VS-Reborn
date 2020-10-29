@@ -6,7 +6,7 @@ module.exports = {
       summary: `Save memories forever`,
     },
     description: `Peterborough based photography studio`,
-    siteUrl: ``,
+    siteUrl: `https://vita-smile-photography.uk/`,
     social: {
       twitter: `Hex_zer0`,
     },
