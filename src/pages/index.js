@@ -9,19 +9,10 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
-      </Layout>
-    )
-  }
-
-  return (
+return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="HOME" />
       <Bio />
-     
     </Layout>
   )
 }
