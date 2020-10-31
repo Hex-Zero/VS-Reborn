@@ -8,9 +8,42 @@
   padding: 1rem;
   text-decoration: none;
   color: black;
+  font: 500 14px "Dosis", "Open Sans", "Arial", sans-serif;
+  color: hsl(0deg 0% 40%);
+  line-height: 51px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transform: scaleY(1.25);
+  transform: scaleX(0.85);
+  -webkit-font-smoothing: antialiased;
 }
 
-.global-header > a > span {
-  font-size: 2rem;
+.global-header > a:hover {
+  color: red;
+}
+.global-header > a > .max-title {
   color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.global-header > a > .max-title > .max-title-vita {
+  letter-spacing: 14px;
+  font-size: 28px;
+  white-space: nowrap;
+  margin-bottom: -14px;
+  transform: scaleY(1.15);
+  transform: scaleX(0.9);
+  color: rgb(109, 109, 109);
+}
+
+.global-header > a > .max-title > .max-title-photograpy {
+  letter-spacing: 18px;
+  transform: scaleX(0.98);
+}
+
+.global-header > a > .max-title > * {
+  margin: 0;
+  padding: 0;
 }

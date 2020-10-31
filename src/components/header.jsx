@@ -8,7 +8,10 @@ const Header = () => {
       <Link to="/">ABOUT</Link>
       <Link to="/">PRICING</Link>
       <Link to="/">
-        <span>VITA</span>
+        <span className="max-title">
+          <span className="max-title-vita">VITA SMILE</span>
+          <span className="max-title-photograpy">PHOTOGRAPY</span>
+        </span>
       </Link>
       <Link to="/">GALLERY</Link>
       <Link to="/">BLOG</Link>

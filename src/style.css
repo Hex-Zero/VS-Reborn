@@ -93,70 +93,6 @@ hr {
   border: 0;
 }
 
-/* Heading */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
-  margin-top: var(--spacing-12);
-  margin-bottom: var(--spacing-6);
-  line-height: var(--lineHeight-tight);
-  letter-spacing: -0.025em;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: var(--fontWeight-bold);
-  color: var(--color-heading);
-}
-
-h1 {
-  font-weight: var(--fontWeight-black);
-  font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
-}
-
-h2 {
-  font-size: var(--fontSize-5);
-}
-
-h3 {
-  font-size: var(--fontSize-4);
-}
-
-h4 {
-  font-size: var(--fontSize-3);
-}
-
-h5 {
-  font-size: var(--fontSize-2);
-}
-
-h6 {
-  font-size: var(--fontSize-1);
-}
-
-h1 > a {
-  color: inherit;
-  text-decoration: none;
-}
-
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a {
-  text-decoration: none;
-  color: inherit;
-}
-
 /* Prose */
 
 p {
@@ -243,7 +179,6 @@ a:focus {
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-10) var(--spacing-5);
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
