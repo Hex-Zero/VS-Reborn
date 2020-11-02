@@ -40,7 +40,7 @@
 
 .global-header > a > .max-title > .max-title-photograpy {
   letter-spacing: 18px;
-  transform: scaleX(0.98);
+  transform: scaleX(0.97);
 }
 
 .global-header > a > .max-title > * {
