@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 const Header = () => {
   return (
     <header className="global-header">
-      <Link to="/">HOME</Link>
+      <Link to="/">HME</Link>
       <Link to="/">ABOUT</Link>
       <Link to="/">PRICING</Link>
       <Link to="/">
