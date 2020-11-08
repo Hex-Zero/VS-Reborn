@@ -27,14 +27,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/images/main`,
+        name: `mainImages`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 630,
-            },
+            resolve: `gatsby-remark-images`
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -77,7 +81,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/images/gatsby-icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,

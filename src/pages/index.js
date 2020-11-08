@@ -1,26 +1,32 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Masonry from 'react-masonry-css'
+import Img from 'gatsby-image'
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
-
+const BlogIndex = (props) => {
+  const siteTitle = props.data.site.siteMetadata?.title || `Title`
+  const posts = props.data.allMarkdownRemark.nodes
+ console.log(props);
 return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={props.location} title={siteTitle}>
       <SEO title="HOME" />
       <Masonry
         breakpointCols={3}
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column">
-        {/* array of JSX items */}
+        {props.data.allFile.edges.map((element , index) => {
+          console.log(element);
+          return <Img key={index} fluid={ element.node.childImageSharp.fluid}/>
+        })}
       </Masonry>
     </Layout>
   )
 }
+
 
 export default BlogIndex
 
@@ -44,5 +50,16 @@ export const pageQuery = graphql`
         }
       }
     }
+    allFile(filter: {sourceInstanceName: {eq: "mainImages"}}) {
+    edges {
+      node {
+        childImageSharp {
+          fluid(maxWidth: 1200){
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  }
   }
 `
