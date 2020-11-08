@@ -16,6 +16,7 @@
   transform: scaleY(1.25);
   transform: scaleX(0.85);
   -webkit-font-smoothing: antialiased;
+  transition: color 0.3s ease;
 }
 
 .global-header > a:hover {
@@ -39,7 +40,7 @@
 }
 
 .global-header > a > .max-title > .max-title-photograpy {
-  letter-spacing: 18px;
+  letter-spacing: 15px;
   transform: scaleX(0.97);
 }
 

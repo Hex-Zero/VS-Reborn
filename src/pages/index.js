@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Masonry from 'react-masonry-css'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,6 +12,12 @@ const BlogIndex = ({ data, location }) => {
 return (
     <Layout location={location} title={siteTitle}>
       <SEO title="HOME" />
+      <Masonry
+        breakpointCols={3}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column">
+        {/* array of JSX items */}
+      </Masonry>
     </Layout>
   )
 }
