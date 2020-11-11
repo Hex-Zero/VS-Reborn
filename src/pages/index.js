@@ -15,11 +15,10 @@ return (
     <Layout location={props.location} title={siteTitle}>
       <SEO title="HOME" />
       <Masonry
-        breakpointCols={3}
+        breakpointCols={4}
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column">
         {props.data.allFile.edges.map((element , index) => {
-          console.log(element);
           return <Img key={index} fluid={ element.node.childImageSharp.fluid}/>
         })}
       </Masonry>
