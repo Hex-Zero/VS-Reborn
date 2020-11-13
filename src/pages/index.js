@@ -10,16 +10,16 @@ import SEO from "../components/seo"
 const BlogIndex = (props) => {
   const siteTitle = props.data.site.siteMetadata?.title || `Title`
   const posts = props.data.allMarkdownRemark.nodes
- console.log(props);
-return (
+  console.log(props);
+  return (
     <Layout location={props.location} title={siteTitle}>
       <SEO title="HOME" />
       <Masonry
-        breakpointCols={4}
+        breakpointCols={3}
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column">
-        {props.data.allFile.edges.map((element , index) => {
-          return <Img key={index} fluid={ element.node.childImageSharp.fluid}/>
+        {props.data.allFile.edges.map((element, index) => {
+          return <Img key={index} fluid={element.node.childImageSharp.fluid} />
         })}
       </Masonry>
     </Layout>
