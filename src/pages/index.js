@@ -6,16 +6,28 @@ import Img from 'gatsby-image'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+function returnLayoutSize(width, height) {
+  console.log(width, height);
+  if (width > height) {
+    return "max-two-column-wide"
+  } else if (width == height) {
+    return ""
+  } else {
+    return "max-two-row-high"
+  }
+}
+
 const BlogIndex = (props) => {
   const siteTitle = props.data.site.siteMetadata?.title || `Title`
   const posts = props.data.allMarkdownRemark.nodes
-  console.log(props);
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO title="HOME" />
       <section className="max-main-image-wrapper">
         {props.data.allFile.edges.map((element, index) => {
-          return <Img key={index} className="max-main-image" fluid={element.node.childImageSharp.fluid} />
+          const layout = returnLayoutSize(element.node.childImageSharp.original.width, element.node.childImageSharp.original.height)
+          return <Img key={index} className={"max-main-image " + layout}
+            fluid={element.node.childImageSharp.fluid} />
         })}
         </section>
     </Layout>
@@ -51,6 +63,10 @@ export const pageQuery = graphql`
         childImageSharp {
           fluid(maxWidth: 1200){
             ...GatsbyImageSharpFluid
+          }
+          original {
+            height
+            width
           }
         }
       }

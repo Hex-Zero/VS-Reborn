@@ -57,7 +57,7 @@ main {
 .max-main-image-wrapper {
   grid-column-gap: 5px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, auto);
   grid-row-gap: 5px;
 }
 
@@ -81,4 +81,12 @@ main {
   );
   opacity: 0.06;
   margin-bottom: 34px;
+}
+
+.max-two-column-wide {
+  grid-column: span 2;
+}
+
+.max-two-row-high {
+  grid-row: span 2;
 }
