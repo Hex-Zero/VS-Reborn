@@ -69,3 +69,16 @@ main {
 .max-main-image:hover {
   filter: grayscale(0%);
 }
+
+.max-separator {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 241, 190, 1) 0%,
+    rgba(255, 175, 0, 1) 39%,
+    rgba(255, 149, 0, 1) 77%,
+    rgba(239, 198, 140, 1) 100%
+  );
+  opacity: 0.06;
+  margin-bottom: 34px;
+}
