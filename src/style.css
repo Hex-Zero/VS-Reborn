@@ -178,7 +178,7 @@ a:focus {
 
 .global-wrapper {
   margin: var(--spacing-0) auto;
-  max-width: var(--maxWidth-wrapper);
+  max-width: 800px;
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {

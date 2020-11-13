@@ -53,3 +53,19 @@ main {
   min-height: calc(100vh - 120px - 48px - 72px);
   background-color: aliceblue;
 }
+
+.max-main-image-wrapper {
+  grid-column-gap: 5px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 5px;
+}
+
+.max-main-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s linear;
+}
+
+.max-main-image:hover {
+  filter: grayscale(0%);
+}

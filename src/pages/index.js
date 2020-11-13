@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Masonry from 'react-masonry-css'
 import Img from 'gatsby-image'
 
 
@@ -14,14 +13,11 @@ const BlogIndex = (props) => {
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO title="HOME" />
-      <Masonry
-        breakpointCols={3}
-        className="my-masonry-grid"
-        columnClassName="my-masonry-grid_column">
+      <section className="max-main-image-wrapper">
         {props.data.allFile.edges.map((element, index) => {
-          return <Img key={index} fluid={element.node.childImageSharp.fluid} />
+          return <Img key={index} className="max-main-image" fluid={element.node.childImageSharp.fluid} />
         })}
-      </Masonry>
+        </section>
     </Layout>
   )
 }
