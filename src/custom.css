@@ -51,7 +51,6 @@
 
 main {
   min-height: calc(100vh - 120px - 48px - 72px);
-  background-color: aliceblue;
 }
 
 .max-main-image-wrapper {
@@ -74,13 +73,20 @@ main {
   height: 2px;
   background: linear-gradient(
     90deg,
-    rgba(255, 241, 190, 1) 0%,
+    rgb(255, 245, 210) 0%,
     rgba(255, 175, 0, 1) 39%,
     rgba(255, 149, 0, 1) 77%,
-    rgba(239, 198, 140, 1) 100%
+    rgb(255, 235, 207) 100%
   );
-  opacity: 0.06;
+  background-size: 600% 600%;
+  opacity: 0.1;
+  border-radius: 10%;
+
   margin-bottom: 34px;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
 }
 
 .max-two-column-wide {
@@ -89,4 +95,38 @@ main {
 
 .max-two-row-high {
   grid-row: span 2;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
