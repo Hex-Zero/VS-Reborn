@@ -95,6 +95,26 @@ main {
   grid-row: span 2;
 }
 
+.max-image-modal-wrapper {
+  background: rgba(255, 255, 255, 0.726);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.7s linear;
+}
+
+.max-show {
+  opacity: 1;
+  z-index: 128;
+}
+
+.max-hide {
+  display: none;
+}
+
 @keyframes AnimationName {
   0% {
     background-position: 0% 50%;
