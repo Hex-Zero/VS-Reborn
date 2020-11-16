@@ -91,11 +91,13 @@ main {
 .max-two-column-wide {
   grid-column: span 2;
   max-height: 300px;
+  overflow: hidden;
 }
 
 .max-two-row-high {
   grid-row: span 2;
   max-width: 300px;
+  overflow: hidden;
 }
 
 .max-image-modal-wrapper {
