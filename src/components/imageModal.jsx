@@ -19,7 +19,7 @@ const ImageModal = ({ imageIndex, imageArray }) => {
       >
         <div className="max-carousel">
           <Img
-            fluid={imageArray[imageIndex.index - 1].node.childImageSharp.fluid}
+            fluid={imageArray[imageIndex.index - 1]?.node.childImageSharp.fluid}
           />
         </div>
       </div>
