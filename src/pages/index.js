@@ -25,14 +25,6 @@ const BlogIndex = ({data, location}) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="HOME" />
-    
-      <div class='layer-1 max-loading-spinner' >
-        
-<div class='layer-2' >
-<div class='layer-3' >  <Icon />
-</div>
-</div>
-</div>
       <ImageModal imageIndex={imageIndex} imageArray={data.allFile.edges}></ImageModal>
       <section className="max-main-image-wrapper">
         {data.allFile.edges.map((element, index) => {
