@@ -111,8 +111,8 @@ main {
   top: 0;
   left: 0;
   opacity: 0;
-  z-index: 0;
-  transition: opacity 0.4s linear, z-index 0.4s cubic-bezier(0, 1, 1, 0);
+  z-index: -128;
+  transition: opacity 0.4s linear, z-index 0s cubic-bezier(0, 1, 1, 0);
 }
 
 .max-show {

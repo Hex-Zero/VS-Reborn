@@ -1,7 +1,6 @@
 import React, {useState } from "react"
 import { graphql } from "gatsby"
 import Img from 'gatsby-image'
-import Icon from "../../content/assets/Vector.svg";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
