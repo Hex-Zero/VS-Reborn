@@ -9,7 +9,7 @@ import ImageModal from "../components/imageModal"
 function returnLayoutSize(width, height) {
   if (width > height) {
     return "max-two-column-wide"
-  } else if (width == height) {
+  } else if (width === height) {
     return ""
   } else {
     return "max-two-row-high"
