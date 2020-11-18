@@ -24,6 +24,7 @@ const BlogIndex = ({data, location}) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="HOME" />
+      <img src={`${process.env.GATSBY_API_URL}/logo.png`} alt="Logo" />
       <ImageModal imageIndex={imageIndex} imageArray={data.allFile.edges}></ImageModal>
       <section className="max-main-image-wrapper">
         {data.allFile.edges.map((element, index) => {
