@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql , Img} from "gatsby"
+import { graphql, Img } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,8 +10,8 @@ const Contact = ({ data, location }) => {
   console.log(data.staticMap.childFile.childImageSharp.fluid);
   return (
     <Layout location={location} title={siteTitle}>
-          <SEO title="Contact" />
-          <img src={data.staticMap.childFile.childImageSharp.fluid.src}/>
+      <SEO title="Contact" />oi
+      <img src={data.staticMap.childFile.childImageSharp.fluid.src} />
     </Layout>
   )
 }
