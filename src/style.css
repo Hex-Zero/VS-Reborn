@@ -174,8 +174,6 @@ a:focus {
   text-decoration: none;
 }
 
-/* Custom classes */
-
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: 900px;
