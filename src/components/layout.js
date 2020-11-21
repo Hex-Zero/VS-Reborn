@@ -1,9 +1,9 @@
-import React from "react"
-import Header from "./header.jsx"
+import React from "react";
+import Header from "./header.jsx";
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
+  const rootPath = `${__PATH_PREFIX__}/`;
+  const isRootPath = location.pathname === rootPath;
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
@@ -17,7 +17,7 @@ const Layout = ({ location, title, children }) => {
         <a href="https://www.gatsbyjs.com">Gatsby</a>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
