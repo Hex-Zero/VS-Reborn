@@ -18,7 +18,6 @@ const Bio = () => {
             name
             summary
           }
-
           social {
             twitter
           }
