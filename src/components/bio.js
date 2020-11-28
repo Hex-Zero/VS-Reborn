@@ -40,7 +40,7 @@ const Bio = () => {
           alt={author?.name || ``}
           className="bio-avatar"
           imgStyle={{
-            borderRadius: `70%`,
+            borderRadius: `80%`,
           }}
         />
       )}
