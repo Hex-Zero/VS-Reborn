@@ -1,8 +1,9 @@
 import React from "react";
-import { graphql, Img } from "gatsby";
+import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import ContackForm from "../components/contactForm";
 
 const Contact = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
@@ -12,7 +13,7 @@ const Contact = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Contact" />
       <img src={data.staticMap.childFile.childImageSharp.fluid.src} />
-      <ContactForm></ContactForm>
+      <ContackForm></ContackForm>
     </Layout>
   );
 };

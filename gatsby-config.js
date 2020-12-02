@@ -1,14 +1,10 @@
-
 const activeEnv =
-  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
-console.log(`Using environment config: '${activeEnv}'`)
-
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development";
+console.log(`Using environment config: '${activeEnv}'`);
 
 require("dotenv").config({
   path: `.env.${activeEnv}`,
-})
-
-
+});
 
 module.exports = {
   siteMetadata: {
@@ -21,6 +17,8 @@ module.exports = {
     siteUrl: `https://vita-smile-photography.uk/`,
     social: {
       twitter: `Hex_zer0`,
+      name: `Vita`,
+      url: `#`,
     },
   },
   plugins: [
@@ -30,20 +28,21 @@ module.exports = {
         path: `${__dirname}/content/blog`,
         name: `blog`,
       },
-    },{
+    },
+    {
       resolve: "@ccalamos/gatsby-source-googlemaps-static",
       options: {
-          key: `${process.env.GMAP}`,
-          center: "41.8781,-87.6298",
+        key: `${process.env.GMAP}`,
+        center: "41.8781,-87.6298",
       },
-  },
+    },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/
-        }
-      }
+          include: /assets/,
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -64,7 +63,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`
+            resolve: `gatsby-remark-images`,
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -112,4 +111,4 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
   ],
-}
+};
