@@ -12,8 +12,8 @@ const Contact = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Contact" />
-      <img src={data.staticMap.childFile.childImageSharp.fluid.src} />
       <ContackForm></ContackForm>
+      <img src={data.staticMap.childFile.childImageSharp.fluid.src} />
     </Layout>
   );
 };
