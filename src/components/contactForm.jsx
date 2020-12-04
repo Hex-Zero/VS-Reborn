@@ -12,9 +12,12 @@ const ContackForm = () => {
       data-netlify-honeypot="bot-field"
     >
       <input type="hidden" name="form-name" value="contact" />
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
+      <label htmlFor="max-contact-name">Name</label>
+      <input id="max-contact-name" type="text" name="name" />
+      <label htmlFor="max-contact-email">E-mail</label>
+      <input id="max-contact-email" type="email" name="email" />
+      <label htmlFor="max-contact-content">Subject</label>
+      <textarea id="max-contact-content" name="message"></textarea>
     </form>
   );
 };

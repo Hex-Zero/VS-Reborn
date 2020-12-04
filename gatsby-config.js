@@ -33,14 +33,14 @@ module.exports = {
       resolve: "@ccalamos/gatsby-source-googlemaps-static",
       options: {
         key: `${process.env.GMAP}`,
-        center: "41.8781,-87.6298",
+        center: "52.5895663,-0.271727",
       },
     },
     {
       resolve: `@ccalamos/gatsby-source-googlemaps-static`,
       options: {
-        key: `YOUR_GOOGLE_MAPS_STATIC_API_KEY`,
-        center: `LATITUDE,LONGITUDE || CITY,REGION`,
+        key: `${process.env.GMAP}`,
+        center: `52.5895663,-0.251727`,
         zoom: `ZOOM_LEVEL`,
         size: `SIZE || WIDTHxHEIGHT`,
         scale: `SCALE_VALUE`,
