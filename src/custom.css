@@ -125,6 +125,9 @@ main {
   width: 900px;
 }
 
+.max-contact-form-container {
+}
+
 @keyframes AnimationName {
   0% {
     background-position: 0% 50%;
