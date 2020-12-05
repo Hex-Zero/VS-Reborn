@@ -44,6 +44,7 @@ module.exports = {
         name: `assets`,
       },
     },
+    [`gatsby-plugin-fontawesome-css`],
     {
       resolve: `gatsby-source-filesystem`,
       options: {
