@@ -126,6 +126,27 @@ main {
 }
 
 .max-contact-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  background: #edebe8;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+}
+
+.max-contact-form-container > label {
+  color: white;
+  margin-top: 15px;
+}
+
+.max-contact-form-container > input,
+textarea {
+  border: 1px goldenrod;
+  background: white;
+}
+
+textarea {
+  height: 150px;
 }
 
 @keyframes AnimationName {
