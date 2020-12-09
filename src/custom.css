@@ -161,8 +161,12 @@ textarea {
 }
 
 .max-map-image {
-  margin-top: 300px;
+  margin-top: 40vh;
+  overflow: hidden;
   cursor: pointer;
+}
+.max-map-image > .gatsby-image-wrapper {
+  margin-top: -25vh;
 }
 
 @keyframes AnimationName {

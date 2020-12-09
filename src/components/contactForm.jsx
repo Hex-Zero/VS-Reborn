@@ -19,6 +19,7 @@ const ContackForm = () => {
         <input id="max-contact-email" type="email" name="email" />
         <label htmlFor="max-contact-content">Subject</label>
         <textarea id="max-contact-content" name="message"></textarea>
+        <input type="submit" value="Send" />
       </div>
     </form>
   );
